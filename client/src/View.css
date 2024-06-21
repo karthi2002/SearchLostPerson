@@ -1,0 +1,49 @@
+.viewContent{
+    background-color: white !important;
+}
+.grid-image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid-image {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-image {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
+.grid-image-item{
+    background-color: hsla(0, 0%, 100%, 0.918);
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.grid-image-item:hover{
+    border-radius: 12px;
+}
+.btn-5, .calling {
+  cursor: pointer;
+  background-color: hsla(0, 0%, 100%, 0.918);
+  border: 1px solid hsla(0, 0%, 100%, 0.918);
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.btn-5:hover, .calling:hover {
+  transform: translateY(-2px);
+}
+
+.btn-5:active, .calling:active {
+  transform: translateY(0);
+}
+

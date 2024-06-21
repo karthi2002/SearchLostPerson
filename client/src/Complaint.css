@@ -1,0 +1,59 @@
+.grid-form{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+label {
+    text-align: left !important;
+    display: block;
+}
+
+.ComplaintContent{ 
+    background-image: url(./images/bgimg1.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+#complaintBorder{
+    background-color: hsla(0, 0%, 100%, 0.918);
+    border: 1px solid transparent;
+    border-radius: 15px ;
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btn-4 {
+  appearance: none;
+  background-color: #222;
+  border: 2px solid #1A1A1A;
+  border-radius: 22px;
+  box-sizing: border-box;
+  color: #EEEEEE;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+  will-change: transform;
+}
+.btn-4:disabled {
+  pointer-events: none;
+}
+.btn-4:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.btn-4:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* Media query for tablets and mobile devices */
+@media (max-width: 768px) {
+  #complaintBorder {
+    width: auto; 
+    margin: 15px;
+  }
+}
